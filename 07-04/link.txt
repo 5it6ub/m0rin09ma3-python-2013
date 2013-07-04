@@ -1,0 +1,6 @@
+http://dgplug.org/summertraining/2013/
+
+https://github.com/kushaldas/studenttest
+
+https://raw.github.com/kushaldas/studenttest/master/assignment1/solution.rst
+
