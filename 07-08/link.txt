@@ -1,0 +1,26 @@
+http://en.wikipedia.org/wiki/Bytecode
+
+http://www.flickr.com/photos/kushaldas/8609125454/in/set-72157633134565275
+is Guido van Rossum
+
+http://kushaldas.in/tmp/pym.pdf
+
+http://lists.dgplug.org/pipermail/users-dgplug.org/2013-July/001164.html
+
+
+task:
+1. contain your introduction and a few lines about 
+what you think about this training
+
+2. commit and push
+3. and then use the submit_hometask command to submit to our server
+submit_hometask -f path/to/the/rst/file -t "Introduction"
+write the exact title I wrote
+4.you can test your rst file using rst2html command and see how it looks
+5.remember: you should not use double line bases titles
+you should use something like
+title
+--------
+
+git ls-tree -r master --name-only
+
