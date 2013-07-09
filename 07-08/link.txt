@@ -8,6 +8,37 @@ http://kushaldas.in/tmp/pym.pdf
 http://lists.dgplug.org/pipermail/users-dgplug.org/2013-July/001164.html
 
 
+First install the dependencies:
+
+ To install dependencies: become root ($ su -) in Ubuntu ($ sudo -s)
+ # git clone git://github.com/kennethreitz/requests.git
+ # cd requests
+ # python setup.py install
+
+THEN:
+
+1. Become root ($ su -) in Ubuntu ($ sudo -s) DONT if you are already root
+2. cd /usr/bin/
+3. wget http://kushaldas.in/tmp/submit_hometask
+4. chmod +x /usr/bin/submit_hometask
+5. exit from the root account (press Ctrl+d)
+
+6. Now from your normal user account create a file called ~/.dgplug.conf
+Paste the text bellow in that file:
+
+[dgplug]
+user=
+password=
+
+7. Add your github username after user=
+It will look like:
+user=kushaldas
+
+8. reply to this email directly to me with your username. I will send
+a personal email with the
+password.
+
+
 task:
 1. contain your introduction and a few lines about 
 what you think about this training
