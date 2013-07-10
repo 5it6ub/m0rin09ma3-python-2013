@@ -1,2 +1,68 @@
 https://help.github.com/articles/generating-ssh-keys
 
+https://raw.github.com/kushaldas/pym/master/docs/operatorsexpressions.rst
+
+timsort
+
+git format-patch -n HEAD
+git apply --check path/to/your/patch
+https://help.github.com/articles/creating-a-pull-request
+
+http://pymbook.readthedocs.org/en/latest/
+
+http://stackoverflow.com/questions/1907565/c-python-different-behaviour-of-the-modulo-operation
+
+http://python-history.blogspot.com.es/2010/08/why-pythons-integer-division-floors.html
+
+http://mathforum.org/library/drmath/view/52343.html
+
+http://nikola.ralsina.com.ar/quickstart.html
+
+https://github.com/kushaldas/pym/commits/master
+
+22:33 < kushal> please read file and functions chapter
+22:34 < kushal> and then write a file called, mount.py
+22:34 < kushal> if we execute it like $ ./mount.py
+22:34 < kushal> it should give the same output as mount command
+22:34 < kushal> /proc/mounts is file you need to read for the same
+22:35 < kushal> name of the problem is "mount"
+22:35 < kushal> so remember to create a directory called mount in your git repository and solution.rst there
+22:36 < kushal> explain your code properly in that solution.rst
+22:36 < kushal> also give a link to your actual code file in github.com
+22:38 < kushal> http://nikola.ralsina.com.ar/quickstart.html for rst help
+22:44 < kushal> first push the directory and then submit the solution
+22:44 < kushal> remember to explain properly
+22:44 < kushal> you can do lots of comments in the source too
+
+
+01:36 < kushal> kirk_iowa, then go to https://github.com/kushaldas/pym
+01:37 < kirk_iowa> okay
+01:37 < kushal> fork the project
+01:37 < kirk_iowa> okay
+01:38 < kushal> kirk_iowa, then clone your project
+01:38 < kushal> the name will be the same
+01:38 < kushal> pym
+01:38 -!- vimal [vikumar@nat/redhat/x-gofnzdnxamexjchg] has quit [Quit: Leaving]
+01:39 < kushal> kirk_iowa, tell me after you are done
+01:40 < kirk_iowa> done
+01:40 < iam_sudip> kushal: can I do? actually i have pointed some typos again.
+01:41 < kushal> iam_sudip, do it
+01:41 < kushal> kirk_iowa, now cd into that directory
+01:41 < kirk_iowa> okay
+01:41 < kushal> git remote add upstream https://github.com/kushaldas/pym.git
+01:42 < kushal> kirk_iowa, now make a new branch so that you can work in that
+01:42 < kushal> kirk_iowa, $ git checkout -b grammar
+01:42 < kushal> there you make the changes you want
+01:42 < kushal> the files are inside docs directory
+01:43 < kushal> inside docs, $ make html
+01:43 < kushal> will create the html version of the book locally for your test
+01:43 -!- zishan [~Sheesh@27.62.13.65] has quit [Quit: Leaving]
+01:44 < kushal> kirk_iowa, after you are sure that everything is ok, you can git push
+01:44 < kushal> kirk_iowa, https://help.github.com/articles/creating-a-pull-request
+01:45 -!- pjp [~pjp@106.210.194.53] has quit [Read error: Connection reset by peer]
+01:45 -!- Netsplit over, joins: @ChanServ
+01:45 < kirk_iowa> okay!
+01:46 < kirk_iowa> :)
+01:47 < kushal> kirk_iowa, create those Pull Requests
+01:48 < kushal> kirk_iowa, I will check and merge them :)
+
