@@ -1,0 +1,7 @@
+http://dgplug.org/ircstat/
+
+http://www.pythontutor.com/visualize.html
+
+http://pymbook.readthedocs.org/en/latest/
+
+http://kushaldas.in/tmp/pym-beta.pdf
