@@ -1,0 +1,7 @@
+	mount		/proc/mounts
+1.	n/a		rootfs line
+2. 	on,(,),type	n/a
+3.      n/a		0 0
+
+4.	1 on 2 type 3 (4)
+
