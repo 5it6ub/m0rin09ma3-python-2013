@@ -39,3 +39,7 @@ class Teacher(Person):
 person1 = Person('Sachin')
 student1 = Student('Kushal', 'CSE', 2005)
 teacher1 = Teacher('Prashad', ['C', 'C++'])
+
+print person1.get_details()
+print student1.get_details()
+print teacher1.get_details()

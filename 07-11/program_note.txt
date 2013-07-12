@@ -1,0 +1,21 @@
+urllib2.urlopen()
+	raise URLError on errors
+
+>>> f = urllib2.urlopen('http://download.finance.yahoo.com/d/quotes.csv?s=GOOG&f=l1')
+>>> print f.readline()
+920.24
+
+>>> f.close()
+
+import sys
+print 'Number of arguments: ', len(sys.argv), 'arguments.'
+print 'Argument List:', str(sys.argv)
+
+>>> f = urllib2.urlopen('http://download.finance.yahoo.com/d/quotes.csv?s=GOOG&s=YHOO&f=l1')
+>>> f.read()
+'920.24\r\n27.04\r\n'
+
+1. take 1 commandline argument(NASDAQ symbol)
+2. calculate share value = quotes * round lots(100 shares)shares
+2. print the last price or latest share value
+sharevalue.py
