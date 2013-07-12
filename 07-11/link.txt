@@ -1,0 +1,35 @@
+https://github.com/tpope/vim-pathogen
+
+https://help.github.com/articles/fork-a-repo
+https://help.github.com/articles/syncing-a-fork
+
+http://www.centos.org/docs/5/html/5.1/Deployment_Guide/s2-proc-mounts.html
+
+
+22:05 < kushal> next task, read about classes and modules
+22:07 < kushal> after that , read about http://docs.python.org/2/library/urllib2.html
+22:09 < kushal> now the hometask, for which you have to read that urllib2 module
+22:12 < kushal> http://download.finance.yahoo.com/d/quotes.csv?s=GOOG&f=l1
+22:12 < kushal> ^^^ try that url
+22:12 < kushal> there we are passing GOOG
+22:13 < kushal> you can pass any other company's NASDAQ symbol value in that to check the current share price
+22:14 < kushal> now, name of the hometask: "sharevalue", name of the code, sharevalue.py
+22:14 < kushal>  ./sharevalue.py GOOG
+22:14 < kushal> ^^ the above should print the latest share value of GOOD
+22:14 < kushal> sorry, GOOG
+
+kushal: I'm curious to know why python does not allow to declare & initialize it in a same line? i.e. 'global a = 10' gives me a syntax error
+
+
+http://en.wikipedia.org/wiki/Python_syntax_and_semantics#Easter_eggs
+http://is.gd/vYKzep
+http://pythontutor.com/visualize.html#mode=display
+
+01:03 < kushal> import sys
+01:03 < kushal> sys.getrefcount(a)
+01:03 < kushal> def hello():
+01:04 < kushal>     return 100
+01:04 < kushal> sys.getrefcount(a)
+
+http://stackoverflow.com/a/11008311
+
