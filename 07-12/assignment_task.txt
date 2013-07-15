@@ -1,0 +1,42 @@
+[skaetsu@jupiter] workspace $ cd virtual-env/
+
+[skaetsu@jupiter] virtual-env $ source virt1/bin/activate
+
+(virt1)[skaetsu@jupiter] factorial $ (master)pip install beautifulsoup4
+Downloading/unpacking beautifulsoup4
+  Downloading beautifulsoup4-4.2.1.tar.gz (139kB): 139kB downloaded
+    Running setup.py egg_info for package beautifulsoup4
+
+Installing collected packages: beautifulsoup4
+  Running setup.py install for beautifulsoup4
+
+Successfully installed beautifulsoup4
+Cleaning up...
+
+(virt1)[skaetsu@jupiter] factorial $ (master)yolk -l
+Python          - 2.7.5        - active development (/usr/lib/python2.7/lib-dynload)
+beautifulsoup4  - 4.2.1        - active
+lxml            - 3.2.1        - active
+pip             - 1.3.1        - active
+setuptools      - 0.6c11       - active
+wsgiref         - 0.1.2        - active development (/usr/lib/python2.7)
+yolk            - 0.4.3        - active
+
+(virt1)[skaetsu@jupiter] virtual-env $ deactivate
+
+
+
+<div class="blog-entry-author">
+ <img alt="" src="http://icon.fedorapeople.org/mustache.gif">
+   <br>
+      <a href="http://blog.mricon.com/">
+          Konstantin Ryabitsev
+             </a>
+                <div class="fas-account">
+
+<div class="blog-entry-title">
+ <a href="http://cicku.me/seth-vidal-is/">
+   yum 作者 Seth Vidal 去世
+    </a>
+    </div>
+

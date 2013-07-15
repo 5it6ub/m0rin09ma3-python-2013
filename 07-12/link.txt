@@ -1,0 +1,50 @@
+http://stackoverflow.com/questions/161813/how-do-i-fix-merge-conflicts-in-git
+
+http://is.gd/YauUE2
+
+http://blaag.haard.se/What-s-the-point-of-properties-in-Python/
+
+http://docs.python.org/2/reference/simple_stmts.html#global
+
+
+22:21 < kushal> everyone can skip http://pymbook.readthedocs.org/en/latest/igd.html and then read the virtualenv and project structure chapter
+22:23 < kushal> for the next assignment
+22:24 < kushal> everyone needs to write the commands they will use in the shell
+22:26 < kushal> you have to create and use a virtualenv
+22:26 < kushal> name it whatever you want
+22:27 < kushal> write a file called, planetparser.py
+22:28 < kushal> when we run it, like $ ./planetparser.py
+22:28 < kushal> it should print each of the blog post name, author name on the terminal
+22:29 < kushal> feel free to use any available python module for the same
+22:29 < kushal> install them in your virtualenv, that is why you have to copy paste the commands you ise
+22:29 < kushal> use
+22:29 < kushal> so that we can find out exact details about the packages
+22:30 < kushal> you have the whole weekend for this task
+22:30 < kushal> ^^ any question related to the assignment ?
+22:30 < kushal> btw, do not rush
+22:30 < kushal> take your time
+22:30 < kushal> do enough search to find the module which will help you the most
+22:31 < kushal> there are different ways to do the same
+22:34 < kushal> http://planet.fedoraproject.org/
+22:35 < kushal> open this link
+22:35 < kushal> and see the blog posts
+22:36 < kushal> so you have to print the blog post titles and author names
+22:38 < J_Caselles_> Yes. I didn't understand the hole thing about shell commands and virtualenv
+22:38 < kushal> J_Caselles_, say to create a virtualenv you have to give a command, $ virtualenv myenv
+22:38 < kushal> J_Caselles_, you should copy paste $ virtualenv myenv
+22:38 < kushal> in the solution.rst
+22:39 < kushal> so that we can understand what exactly you did
+22:41 < anuragk> kushal: the blog posts particularly on that specific page of the site, right?
+22:42 < kushal> anuragk, yes, but remember there are many ways
+
+
+01:27 < souradeep> everyone do it, paste it in http://pastehtml.com, publish and show me what you did
+http://sayanchowdhury.dgplug.org/souradeep/start.html
+http://sayanchowdhury.dgplug.org/souradeep/basic.html
+http://sayanchowdhury.dgplug.org/souradeep/formatting.html
+http://sayanchowdhury.dgplug.org/souradeep/tables.html
+
+
+02:06 < souradeep> so, a home task
+02:07 < souradeep> prepare a resume page with proper headings and formatting for monday
+
