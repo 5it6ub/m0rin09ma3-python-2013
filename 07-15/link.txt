@@ -1,0 +1,18 @@
+http://fosswithme.wordpress.com/2013/07/10/darkserver-improvement-week-two-and-week-three/
+
+http://paste.fedoraproject.org/25366/38955741/
+
+http://pymbook.readthedocs.org/en/latest/pep8.html
+
+http://en.wikipedia.org/wiki/RSS
+
+https://github.com/rstacruz/sparkup
+
+
+http://sayanchowdhury.dgplug.org/souradeep/image.html
+http://sayanchowdhury.dgplug.org/souradeep/links.html
+http://sayanchowdhury.dgplug.org/souradeep/tables.html
+http://sayanchowdhury.dgplug.org/souradeep/list.html
+01:38 < souradeep> so, the home task for tomorrow,
+01:40 < souradeep> modify your resume and rebuild it with links to your blog and github page, use tables and lists to add more sense to it.
+
