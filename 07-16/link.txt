@@ -1,0 +1,26 @@
+http://www.dgplug.org/irclogs/2012/simple-testing-in-python/
+
+http://sayanchowdhury.dgplug.org/souradeep/div.html
+
+http://sayanchowdhury.dgplug.org/souradeep/id_class.html
+
+01:02 < souradeep> rahulch, you can define rules for classes in css files, and when you use the class attribute here, it will format the div as per the rules
+01:02 < souradeep> rahulch, also, you can identify the classes using javascript.
+
+http://fpaste.org/25737/99489113/
+
+http://sayanchowdhury.dgplug.org/souradeep/inputs.html
+http://sayanchowdhury.dgplug.org/souradeep/forms.html
+
+02:13 < souradeep>  build a simple email registration form using html forms
+02:13 < souradeep> and the data should be validated
+02:14 < souradeep> like the form will not accept invalid data
+02:14 < souradeep> google and find how to achieve this
+02:14 <+batul> http://www.slideshare.net/mrorganic/how-to-get-motivated-to-achieve-your-goals-and-take-massive-action-presentation
+02:14 < souradeep> this is called client side validation. got it everyone?
+02:16 < J_Caselles> we just have to create the form with the proper attributes, right?
+02:16 < souradeep> J_Caselles, and make sure that the data entered is valid
+
+http://www.w3schools.com/default.asp
+https://developer.mozilla.org/en-US/docs/Web/HTML
+

@@ -1,0 +1,28 @@
+http://goo.gl/S1Zsq
+http://pythonfiddle.com/
+
+python-list/comp.lang.python and python-dev
+PEP 343
+pythonmentors.com/core-mentorship@python.org
+http://www.python.org/dev/peps/pep-0020/
+python -m this
+python -m antigravity
+IPython Notebook
+http://docs.python-requests.org/en/latest/index.html" requests" library
+beaker-project.org
+https://www.youtube.com/watch?v=PYw2K0_ZZ0w
+http://buildbot.python.org/all/waterfall?category=3.x.stable
+https://www.youtube.com/watch?v=UZIq_9KgFEY
+http://www.flickr.com/photos/kushaldas/8608027063/
+
+http://www.youtube.com/watch?v=5pZVqBFtuLk
+
+22:01 <@kushal> a quick task
+22:03 <@kushal> write a tool which will print out all users present in the system (users who can do a proper login)
+22:03 <@kushal> this will run with sudo
+22:03 <@kushal> the file in question is /etc/passwd
+22:03 <@kushal> there is a standard module also to help
+22:04 <@kushal> http://docs.python.org/2/library/pwd.html
+22:04 <+ekan0ra> write the code and paste it using submit_hometask asap :)
+
+

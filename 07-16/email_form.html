@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <script type="text/javascript" language="javascript">
+    function validateEmail(email, msg, optional) {
+        if (!email.value && optional) {
+            return true;
+        }
+
+        var re_mail = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z])+$/;
+        if (!re_mail.test(email.value)) {
+            alert(msg);
+            email.focus();
+            email.select();
+            return false;
+        }
+
+        return true;
+    }
+    </script>
+</head>
+<body>
+    <form action="handler"
+            onsubmit="return validateEmail(this.email,
+            'Please enter your email address or leave the field blank', 
+            true);">
+        email: <input type="text" id="email" name="email" /><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

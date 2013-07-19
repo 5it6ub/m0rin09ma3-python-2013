@@ -1,0 +1,26 @@
+http://retask.readthedocs.org/en/latest/
+
+http://kushaldas.in/details/pym-beta.pdf
+
+pip install cmd2
+
+paste.fedoraproject.org/26198/74156223
+
+22:47 <@kushal> next task is to finished as soon as possible tonight only
+
+23:00 <@kushal> so if I run greet
+23:00 <@kushal> Hi, kushal
+23:00 <@kushal> that is when kushal is my username
+23:00 <@kushal> next
+23:00 <@kushal> another command stock
+23:00 <@kushal> stock GOOG
+23:00 <@kushal> should print current stock value
+23:07 < kushal>  use requests library
+23:07 < kushal> remember to use requests
+23:07 < kushal> two commands in total
+23:09 < J_Caselles> name of task?
+23:10 < kushal> "myshellv1"
+
+http://pymbook.readthedocs.org/en/latest/
+
+
