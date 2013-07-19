@@ -23,4 +23,5 @@ paste.fedoraproject.org/26198/74156223
 
 http://pymbook.readthedocs.org/en/latest/
 
-
+http://www.yosefk.com/blog/do-call-yourself-a-programmer-and-other-career-advice.html
+http://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/
