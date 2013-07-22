@@ -1,0 +1,17 @@
+https://sites.google.com/a/khanacademy.org/forge/for-developers
+
+www.numberphile.com
+http://tmate.io/
+
+23:17 < kushal> write a program., which will take an Integer number as input and then print 1 to that 
+number command separated, but if the number is dividable by 3 then it print "dgp", if it 
+is dividable by 5 then it should print "lug", or if it is dividable by both 3 and 5, 
+then it should "dgp lug" without the quotes
+23:20 < kushal> 1, 2, dgp, 4, lug, dgp, 7, 8, dgp, lug, 11, dgp, 13, 14, dgp lug, 16,
+23:25 < kushal> $ ./mypro.py 16
+
+magazine.lavanguardia.com/reportajes/sociedad/reportaje/pageID/4/cnt_id/5771
+
+http://www.codecademy.com/tracks/web
+html5up.net
+
