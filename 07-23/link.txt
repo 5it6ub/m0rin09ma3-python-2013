@@ -1,0 +1,26 @@
+http://cs50.tv/2012/fall/
+
+http://docs.python.org/2/tutorial/
+
+22:48 <@kushal> use google.com to find out how to add package dependencies in your setup.py file
+22:49 <@kushal> and create a new project, make that setup.py and other files properly, submit it to the test PyPI server (remember, the test server)
+22:50 <@kushal> and then submit a home task post with the link of the project in test PyPi
+22:50 <@kushal> title of the post: "dummy project"
+22:50 <@kushal> btw, missed one point
+22:51 <@kushal> in the dummy project, one should have a command myshell (remember that shell I asked to write few days back ?)
+22:52 <@kushal> remember to test the project using pip :)
+22:54 < Armageddon> what test server ?
+22:54 <@kushal> Armageddon, PyPi test server
+22:54 <@kushal> Armageddon, http://pymbook.readthedocs.org/en/latest/projectstructure.html#registering-your-project
+http://pymbook.readthedocs.org/en/latest/projectstructure.html#python-package-index-pypi
+22:56 <@kushal> you have 2 days for the submission :)
+22:59 <@kushal> remember to rename the file myshell.py to myshell
+
+
+23:11 <@kushal> btw, two links to read: www.joelonsoftware.com/articles/ThePerilsofJavaSchools.html www.paulgraham.com/avg.html
+23:12 <@kushal> everyone tell me what you think after reading the first link
+23:29 <@kushal> also read How to become a hacker -- http://www.catb.org/~esr/faqs/hacker-howto.html
+
+http://landoflisp.com/
+
+
