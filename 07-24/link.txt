@@ -1,0 +1,10 @@
+http://danielchoi.com/software/vmail.html
+
+http://www.youtube.com/watch?v=HR2UnsOuKxo
+
+21:39 < kushal> for tomorrow's guest session do install Flask in a virtualenv
+21:39 < kushal> $ pip install Flask
+
+http://docs.python.org/distutils/setupscript.html
+https://github.com/kushaldas/darkclient/blob/master/setup.py
+

@@ -1,0 +1,10 @@
+http://jinja.pocoo.org/docs/templates/#assignments
+
+http://www.c2.com/cgi/wiki?LazinessImpatienceHubris
+
+http://fedoraproject.org/wiki/Infrastructure
+https://fedoraproject.org/wiki/Infrastructure/GettingStarted
+http://fedoraproject.org/easyfix/
+
+#fedora-admin (for more sysadmin discussion) and #fedora-apps (more for applications)
+
