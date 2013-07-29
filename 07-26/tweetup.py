@@ -1,49 +1,84 @@
 #!/usr/bin/env python
-
-#tweetup -f path/to/image -d description
+import sys
+import webbrowser
+import tweepy
 from twython import Twython
-from optparse import OptionParser
 import argparse
 
-parser = OptionParser()
-parser.add_option("-f", "--file", dest="img_file",
-                  "-d", "--description", dest="description",
-                  help="file: jpg, png, etc", metavar=FILE)
-(option, args) = parser.parse_args()
+def check_cmd_args():
+    """ check command linke arguments """
+    parser = argparse.ArgumentParser(description='post file & \
+                                                  comment to twitter')
+    parser.add_argument('-f', '--file', required=True)
+    parser.add_argument('-d', '--description', required=True)
+    parser.add_argument('--version', action='version', 
+                        version='%(prog)s 1.0')
+    args = parser.parse_args()
+    #print(args)
 
-print "file: %s\ndescription: %s" % (option.img_file, option.description)
-APP_KEY = 'Z67CQZqw1KvstCCMXGkQ'
-APP_SECRET = 'NaxaXxCoCAkZRf0mW4K36Je0WJuc4v5RYWfCu5es5I'
-OAUTH_TOKEN = '1626564704-njhaT0EMeqEB8cYP4B3EuVAjmgMY9Fgx6zY5saq'
-OAUTH_TOKEN_SECRET = 'f11zLz17j0yJUIuvoOOAMlJhuqeOQbDMe5dorx8AtWg'
+    return args
 
-#twitter = Twython(APP_KEY, APP_SECRET)
-#auth = twitter.get_authentication_tokens()
-#print auth
-#OAUTH_TOKEN = auth['oauth_token']
-#OAUTH_TOKEN_SECRET = auth['oauth_token_secret']
 
-twitter = Twython(APP_KEY, APP_SECRET,
-                  OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
-# User Information
-#credentials = twitter.verify_credentials()
-#print credentials
+def get_tokens():
+    """
+    Query the user for their consumer key/secret
+    then attempt to fetch a valid access token.
+    """
 
-# Authenticated Users Home Timeline
-#home_timeline = twitter.get_home_timeline()
-#print home_timeline
+    tokens = {}
+    tokens['consumer_key'] = raw_input('Consumer key: ').strip()
+    tokens['consumer_secret'] = raw_input('Consumer secret: ').strip()
+    auth = tweepy.OAuthHandler(tokens['consumer_key'], 
+                               tokens['consumer_secret'])
 
-# Updating Status
-# please make sure you set 'Access level' to permit POST
-#post_status = twitter.update_status(status='See how easy using Twython is!')
-#print post_status
+    # Open authorization URL in browser
+    webbrowser.open(auth.get_authorization_url())
 
-# Searching
-#search_result = twitter.search(q='python', result_type='popular')
-#print search_result
+    # Ask user for verifier pin
+    pin = raw_input('Enter a pin number from twitter.com: ').strip()
 
-# Updating Status with Image
-photo = open('/home/skaetsu/downloads/python-logo-master-v3-TM.jpg', 'rb')
-img_post_status = twitter.update_status_with_media(status='Checkout this cool image!', media=photo)
-print img_post_status
+    # Get access token
+    access_token = auth.get_access_token(pin)
+
+    # Give user the access token
+    tokens.update({'access_key': access_token.key, 'access_secret': access_token.secret})
+    #print '  Key: %s' % access_token.key
+    #print '  Secret: %s' % access_token.secret
+
+    return tokens
+
+
+def post_img(cmd_args, tokens):
+    """ post file and comment to twitter """
+    #print cmd_args.file
+    #print cmd_args.description
+    twitter = Twython(tokens['consumer_key'], tokens['consumer_secret'],
+                      tokens['access_key'], tokens['access_secret'])
+
+    # Updating Status with Image
+    photo = open(cmd_args.file, 'rb')
+    img_post_status = twitter.update_status_with_media(status=cmd_args.description, 
+                                                       media=photo)
+    #print img_post_status
+
+
+def main():
+    """
+    0. Check command-line arguments
+    1. Get Tokens from twitter
+    2. Post image file
+    """
+    cmd_args = check_cmd_args()
+    #print cmd_args
+
+    dict_tokens = get_tokens()
+    #print dict_tokens
+
+    post_img(cmd_args, dict_tokens)
+
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())
 
