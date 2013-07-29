@@ -1,0 +1,12 @@
+http://ambre.pingoured.fr/public/dgplug_flask_pingou.tar.gz
+
+http://en.wikipedia.org/wiki/Peugeot_206
+
+22:14 < kushal> now for around next two weeks we will try to give new new small problems which can be solved in 1 day or at max 2 days
+22:16 < kushal> you can write a small command, say , tweetup
+22:17 < kushal> tweetup -f path/to/image -d description
+22:17 < kushal> ^^ like this one can tweet an image
+22:18 < kushal> you figure out how you want to store username/password
+22:18 < kushal> etc etc
+22:27 < kushal> prikotiyal, so this command will take a file and a description for the file and tweet it
+
