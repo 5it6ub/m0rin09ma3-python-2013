@@ -1,0 +1,19 @@
+(virt1) $ python checkEXIF.py /home/ska /usr/bin ./ abc /tmp/dir_1 /tmp/dir_2/
+Warning: "/home/ska" is not a directory.
+Warning: "abc" is not a directory.
+Warning: "./nonexif.jpg" has no EXIF data.
+Found a match: "/tmp/dir_2/exif.jpg"    "./exif.jpg"
+Found a match: "/tmp/dir_2/exif.jpg"    "/tmp/dir_1/a.jpg"
+Found a match: "/tmp/dir_1/a.jpg"       "./exif.jpg"
+
+(virt1) $ python checkEXIF.py -h
+usage: checkEXIF.py [-h] D [D ...]
+
+find duplicated image file.
+
+positional arguments:
+  D           directory to be searched
+
+optional arguments:
+  -h, --help  show this help message and exit
+
