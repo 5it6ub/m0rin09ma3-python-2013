@@ -1,0 +1,12 @@
+21:59 < kushal> write a script which will take a few directories as input and will find out all duplicate images from it
+21:59 < kushal> images == JPEG files with EXIF information
+22:02 < amresh> kushal: duplicate images means exact duplicate (same dim.) or visually same (but with diff. dim.) ?
+22:02 < kushal> same dimension
+22:07 < kirk_iowa> kushal:  and, would the picture need to be in all directories, or just in more than one ?
+22:08 < kushal> kirk_iowa, it can be in any of the directories, any number
+22:08 < kushal> btw, do not trust the filename
+22:09 < J_Caselles> kushal: is it supose to remove the dupplicates, or just find them?
+22:10 < kushal> just find them
+22:11 < kirk_iowa> kushal: what should be the name of the home task ?
+22:11 < kushal> kirk_iowa, "dup_images"
+
