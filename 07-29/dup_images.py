@@ -7,16 +7,16 @@ import argparse
 import os
 
 def parse_command_line():
-    """ retrieve command line arguments """
-    parser = argparse.ArgumentParser(description='find duplicated image file.')
+    """ User requires to specify directory """
+    parser = argparse.ArgumentParser(description='find duplicated image files.')
     parser.add_argument('directory', metavar='D', type=str, nargs='+',
-                       help='directory to be searched')
+                        help='directory to be searched')
     args = parser.parse_args()
 
     return args
 
 def find_image_files(list_directory):
-    """ find list of image files """
+    """ Find image files only from valid directory """
     image_files = []
     for dir in list_directory.directory:
         if os.path.isdir(dir):
@@ -27,7 +27,7 @@ def find_image_files(list_directory):
     return image_files
 
 def find_a_match(list_image_file):
-    """ compare files """
+    """ Find duplicates only from files with EXIF data """
     list_image_file_with_exif = []
     list_exif_data = []
     for image_file in list_image_file:
@@ -35,13 +35,14 @@ def find_a_match(list_image_file):
         #print dict_exif_data
         if not dict_exif_data:
             print 'Warning: "%s" has no EXIF data.' % image_file
-        else:
+        else: # Assume the order of elements in list is persistent
             list_image_file_with_exif.append(image_file)
             list_exif_data.append(dict_exif_data)
 
     #print list_image_file_with_exif
-    #print list_exif_data       
+    #print list_exif_data
     total = len(list_image_file_with_exif)
+    # Any better approach for finding a match? I'm keen to know/learn what others doing ;)
     for i in range(total-1, 0, -1):
         for j in range(i):
             #print 'cmp(dict_%d, dict_%d)' % (i, j),
@@ -71,14 +72,15 @@ def get_exif_data(fname):
 
 def main():
     """ 
-    1. find img files from specified directories 
-    2. compare files and find a match by getting exif info
+    0. get command line arguments
+    1. find image files from directory
+    2. find a match by comparing exif info
     """
     list_directory = parse_command_line()
     #print list_directory.directory
+
     list_image_file = find_image_files(list_directory)
     #print list_image_file
-
     if not list_image_file:
         print 'no image file found in the directory.'
         return 1
