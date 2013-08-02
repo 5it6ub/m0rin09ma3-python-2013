@@ -1,0 +1,37 @@
+http://docs.python.org/2/howto/sockets.html
+http://www.tutorialspoint.com/python/python_networking.htm
+https://bitbucket.org/kumarpraveen/lsync/overview
+http://www.g-loaded.eu/2009/10/30/python-ping/
+
+21:46 < kushal> we build a small web app
+21:47 < kushal> we will start small and then slowly go over
+21:48 < kushal> we will use flask
+21:48 < kushal> if anyone missed, he/she can read http://pymbook.readthedocs.org/en/latest/flask.html as a start
+21:49 < kushal> now the first task
+21:50 < kushal> everyone, create a new directory in their git, call it logviewer
+21:51 < kushal> in the index page (/) of the app, it will show different available logs, to start just show by log names
+21:52 < kushal> by clicking the log name, it will open a new page which will show the log
+21:52 < kushal> so the urls will look like
+21:53 < kushal> http://localhost:8000/ -- > will show all logs
+21:54 < kushal> http://localhost:8000/log/id_of_the_log --> will show the actual log
+21:54 < kushal> in the source directory, create a directory called "posts"
+21:55 < kushal> and inside keep some training logs
+21:55 < kushal> point to remember: logs should be kept not just as plain text file
+21:56 < kushal> but something like a json file, where you can store, log name, date-time, full log text etc
+21:57 < kirk_iowa> my logs (say of #dgplug channel) are one continuous file.  is that a problem?  do i need to break it up into daily pieces, for example ?
+21:58 < kushal> kirk_iowa, break it up, this is just home task so not have to be full classes, but just first 20-50 lines from each class
+21:58 < kushal> kirk_iowa, or you can just download them from dgplug site
+21:58 < kushal> it can be any year
+22:02 < kushal> http://paste.fedoraproject.org/29482/ shows one way to store data
+22:03 < kushal> so, you have to design the store of data first
+22:03 < kushal> and then write some script/something to save some data in the store
+22:03 < kushal> and then start working on the web app
+22:04 < kushal> and you should discuss your ideas with others here
+
+
+>>> logs = []
+>>> log = {'name':'Python Session 1', 'date': 'somedate','text':'<a>: Hello\n<b>: Bye'}
+>>> logs.append(log)
+>>> import json
+>>> json.dump # use this with logs :)
+
