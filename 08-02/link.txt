@@ -1,0 +1,7 @@
+http://vimeo.com/71278954
+http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/
+http://pymotw.com/2/
+user.arnauorriols.com
+https://travis-ci.org/gregmalcolm/python_koans
+http://loremgibson.com/
+
