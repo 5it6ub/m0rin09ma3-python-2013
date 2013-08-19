@@ -1,0 +1,8 @@
+21:55 < kushal> so write a small app which will keep recording your system's load average value either to a database or into a json file, and then write a small frontend web page to draw a graph from the information
+21:55 < kushal> finish this by next Monday
+22:01 < amresh> kushal: how long the record should be , and is it dynamic updating on webpage or just simple
+22:02 < kushal> amresh, as long as the backend tool is running it will keep recording
+22:02 < kushal> amresh, and updating depends on you
+22:07 < kushal> one can use sqlite database for this
+22:07 < kushal> python has solid module for the same
+
