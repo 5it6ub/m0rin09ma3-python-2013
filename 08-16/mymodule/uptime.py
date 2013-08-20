@@ -19,7 +19,7 @@ def Uptime():
 #    command_line = "while [ 1 ]; do uptime; sleep 3; done"
 #    args = shlex.split(command_line)
 #    print args
-    pipe = subprocess.Popen(['./check_uptime.sh', '3', '5'], stdout=subprocess.PIPE, stdin=subprocess.PIPE, shell=False)
+    pipe = subprocess.Popen(['./check_uptime.sh', '1', '5'], stdout=subprocess.PIPE, stdin=subprocess.PIPE, shell=False)
     stdoutdata,stderrdata = pipe.communicate()
 #    print stdoutdata, stderrdata
 #    if not stdoutdata and stderrdata: # not display if it's (None, None)

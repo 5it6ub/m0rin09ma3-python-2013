@@ -11,8 +11,8 @@ if __name__ == "__main__":
     str_uptimes = Uptime()
     for uptime in str_uptimes.split('\n'):
         if uptime: # added this condition statement for '' string
-            #print "insert into uptime1 values(datetime('now'), %s)" % uptime
-            sql = "insert into uptime1 values(datetime('now'), %s)" % uptime
+            #print "insert into uptime1 values(%s)" % uptime
+            sql = "insert into uptime1 values(%s)" % uptime
             connector.execute(sql)
 
     connector.commit()

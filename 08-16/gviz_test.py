@@ -16,7 +16,7 @@ page_template = """
     <script type="text/javascript">
         google.setOnLoadCallback(drawTable);
         google.setOnLoadCallback(drawVisualization);
-        google.setOnLoadCallback(drawAnnotatedTimeLine);
+        google.setOnLoadCallback(drawUptime);
 
         function drawTable() {
             var json_table = new google.visualization.Table(document.getElementById('table_div_json'));
@@ -52,9 +52,22 @@ page_template = """
       ]);
 
       var annotatedtimeline = new google.visualization.AnnotatedTimeLine(
-          document.getElementById('visualization'));
+          document.getElementById('abc'));
       annotatedtimeline.draw(data, {'displayAnnotations': true});
 
+        }
+        function drawUptime() {
+            var json_table = new google.visualization.Table(document.getElementById('uptime'));
+            var uptime_json_data = new google.visualization.DataTable(%(uptime_json)s, 0.6);
+
+            var formatter_medium = new google.visualization.DateFormat({formatType: 'medium'});
+            formatter_medium.format(uptime_json_data,0);
+
+            json_table.draw(uptime_json_data, {showRowNumber: true});
+
+//            var uptime_json_data = new google.visualization.DataTable(%(uptime_json)s, 0.6);
+//            var annotatedtimeline = new google.visualization.AnnotatedTimeLine(document.getElementById('uptime'));
+//            annotatedtimeline.draw(uptime_json_data, {'displayAnnotations': true});
         }
     </script>
     </head>
@@ -62,7 +75,7 @@ page_template = """
         <H1>Table created using ToJSon</H1>
         <div id="table_div_json"></div>
         <div id="xxx" style="width: 600px; height: 400px;"></div>
-<div id="visualization" style="width: 800px; height: 400px;"></div>
+<div id="uptime" style="width: 800px; height: 400px;"></div>
 
     </body>
 </html>
@@ -79,13 +92,25 @@ def main():
             {"name": "Alice", "salary": (12500, "$12,500"), "full_time": True},
             {"name": "Bob", "salary": (7000, "$7,000"), "full_time": True}]
 
+    uptime_description = {"datetime": ("string", "DateTime"),
+                          "uptime1": ("number", "1min load average"),
+                          "uptime5": ("number", "5mins load average"),
+                          "uptime15": ("number", "15mins load average")}
+    uptime_data = [{"datetime": "new Date(2008,12,24)", "uptime1": 0.10, "uptime5": 1.01, "uptime15": 0.11},
+                   {"datetime": "new Date(2008,12,25)", "uptime1": 0.20, "uptime5": 2.02, "uptime15": 0.22}]
+
     # Loading it into gviz_api.DataTable
     data_table = gviz_api.DataTable(description)
     data_table.LoadData(data)
 
+    uptime_data_table = gviz_api.DataTable(uptime_description)
+    uptime_data_table.LoadData(uptime_data)
+
     # Creating a JSon string
     json = data_table.ToJSon(columns_order=("name", "salary", "full_time"),
                                 order_by = "salary")
+
+    uptime_json = uptime_data_table.ToJSon(columns_order=("datetime","uptime1","uptime5","uptime15"))
 
     # Putting the JS code and JSon string into the template
     f = open('./templates/index.html', 'w')

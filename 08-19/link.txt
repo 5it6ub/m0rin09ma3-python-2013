@@ -1,0 +1,7 @@
+http://code.activestate.com/
+
+21:49 < kushal> same way you can write some code to test your web application frontends
+21:49 < kushal> http://selenium-python.readthedocs.org/en/latest/
+22:23 < kushal> anyway, write a small script which can find all words from a file which starts with a volewel
+22:23 < kushal> vowel
+

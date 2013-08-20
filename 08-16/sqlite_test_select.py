@@ -7,7 +7,7 @@ if __name__ == "__main__":
 
     connector = sqlite3.connect("sqlite_test.db")
     cursor = connector.cursor()
-    cursor.execute("select datetime(datetime,'localtime'), onemnt, fivemnt, fifteenmnt from uptime1 order by datetime")
+    cursor.execute("select datetime(datetime,'unixepoch','localtime'), onemnt, fivemnt, fifteenmnt from uptime1 order by datetime")
 
     result = cursor.fetchall()
 

@@ -9,7 +9,7 @@
     <script type="text/javascript">
         google.setOnLoadCallback(drawTable);
         google.setOnLoadCallback(drawVisualization);
-        google.setOnLoadCallback(drawAnnotatedTimeLine);
+        google.setOnLoadCallback(drawUptime);
 
         function drawTable() {
             var json_table = new google.visualization.Table(document.getElementById('table_div_json'));
@@ -45,9 +45,22 @@
       ]);
 
       var annotatedtimeline = new google.visualization.AnnotatedTimeLine(
-          document.getElementById('visualization'));
+          document.getElementById('abc'));
       annotatedtimeline.draw(data, {'displayAnnotations': true});
 
+        }
+        function drawUptime() {
+            var json_table = new google.visualization.Table(document.getElementById('uptime'));
+            var uptime_json_data = new google.visualization.DataTable({"rows":[{"c":[{"v":"new Date(2008,12,24)"},{"v":0.1},{"v":1.01},{"v":0.11}]},{"c":[{"v":"new Date(2008,12,25)"},{"v":0.2},{"v":2.02},{"v":0.22}]}],"cols":[{"type":"string","id":"datetime","label":"DateTime"},{"type":"number","id":"uptime1","label":"1min load average"},{"type":"number","id":"uptime5","label":"5mins load average"},{"type":"number","id":"uptime15","label":"15mins load average"}]}, 0.6);
+
+            var formatter_medium = new google.visualization.DateFormat({formatType: 'medium'});
+            formatter_medium.format(uptime_json_data,0);
+
+            json_table.draw(uptime_json_data, {showRowNumber: true});
+
+//            var uptime_json_data = new google.visualization.DataTable({"rows":[{"c":[{"v":"new Date(2008,12,24)"},{"v":0.1},{"v":1.01},{"v":0.11}]},{"c":[{"v":"new Date(2008,12,25)"},{"v":0.2},{"v":2.02},{"v":0.22}]}],"cols":[{"type":"string","id":"datetime","label":"DateTime"},{"type":"number","id":"uptime1","label":"1min load average"},{"type":"number","id":"uptime5","label":"5mins load average"},{"type":"number","id":"uptime15","label":"15mins load average"}]}, 0.6);
+//            var annotatedtimeline = new google.visualization.AnnotatedTimeLine(document.getElementById('uptime'));
+//            annotatedtimeline.draw(uptime_json_data, {'displayAnnotations': true});
         }
     </script>
     </head>
@@ -55,7 +68,7 @@
         <H1>Table created using ToJSon</H1>
         <div id="table_div_json"></div>
         <div id="xxx" style="width: 600px; height: 400px;"></div>
-<div id="visualization" style="width: 800px; height: 400px;"></div>
+<div id="uptime" style="width: 800px; height: 400px;"></div>
 
     </body>
 </html>
